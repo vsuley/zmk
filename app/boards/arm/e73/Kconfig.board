@@ -1,0 +1,7 @@
+# E73 board configuration
+
+# SPDX-License-Identifier: MIT
+
+config BOARD_E73
+    bool "E73"
+    depends on SOC_NRF52840_QIAA

@@ -1,0 +1,8 @@
+file_format: "1"
+id: petrineko65
+name: Petrineko65
+type: shield
+url: https://nullbits.co/nibble/
+requires: [pro_micro]
+features:
+  - keys

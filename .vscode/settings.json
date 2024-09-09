@@ -18,5 +18,20 @@
   "[css][json][jsonc][html][markdown][yaml]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "search.useIgnoreFiles": false,
+  "favorites.resources": [
+    {
+      "filePath": "app/boards/arm/e73",
+      "group": "Default"
+    },
+    {
+      "filePath": "app/boards/shields/nibble",
+      "group": "Default"
+    },
+    {
+      "filePath": "app/boards/shields/petrineko65",
+      "group": "Default"
+    }
+  ]
 }
