@@ -6,11 +6,11 @@
 
 #include <nordic/nrf52840_qiaa.dtsi>
 #include "e73-pinctrl.dtsi"
-#include "arduino_pro_micro_pins.dtsi"
+#include "e73_2g4m08s1c_pins.dtsi"
 
 / {
     model = "e73";
-    compatible = "e73";
+    compatible = "ebyte,e73";
 
     chosen {
         zephyr,code-partition = &code_partition;

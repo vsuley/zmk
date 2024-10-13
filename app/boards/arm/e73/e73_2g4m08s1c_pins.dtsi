@@ -1,0 +1,36 @@
+/ {
+    e73_pins: connector {
+        compatible = "ebyte,e73-pins";
+        #gpio-cells = <2>;
+        gpio-map-mask = <0xffffffff 0xffffffc0>;
+        gpio-map-pass-thru = <0 0x3f>;
+        gpio-map
+            = <0 0 &gpio1 11 0>  /* ROW 0 - P1.11 */
+            , <1 0 &gpio0 3 0>   /* ROW 1 - P0.03/AIN1 */
+            , <2 0 &gpio0 28 0>  /* ROW 2 - P0.28/AIN4 */
+            , <3 0 &gpio1 13 0>  /* ROW 3 - P1.13 */
+            , <4 0 &gpio0 2 0>   /* ROW 4 - P0.02/AIN0 */
+            , <5 0 &gpio0 29 0>  /* COL 0 - P0.29/AIN5 */
+            , <6 0 &gpio0 31 0>  /* COL 1 - P0.31/AIN7 */
+            , <7 0 &gpio0 30 0>  /* COL 2 - P0.30/AIN6 */
+            , <8 0 &gpio0 26 0>  /* COL 3 - P0.26 */
+            , <9 0 &gpio0 6 0>   /* COL 4 - P0.06 */
+            , <10 0 &gpio1 9 0>  /* COL 5 - P1.09 */
+            , <11 0 &gpio0 12 0> /* COL 6 - P0.12 */
+            , <12 0 &gpio0 7 0>  /* COL 7 - P0.07 */
+            , <13 0 &gpio0 15 0> /* COL 7 - P0.15 (duplicate COL 7) */
+            , <14 0 &gpio0 17 0> /* COL 8 - P0.17 */
+            , <15 0 &gpio0 20 0> /* COL 9 - P0.20 */
+            , <16 0 &gpio0 13 0> /* COL 10 - P0.13 */
+            , <17 0 &gpio0 22 0> /* COL 11 - P0.22 */
+            , <18 0 &gpio0 24 0> /* COL 12 - P0.24 */
+            , <19 0 &gpio1 0 0>  /* COL 13 - P1.00 */
+            , <20 0 &gpio1 2 0>  /* COL 14 - P1.02 */
+            , <21 0 &gpio1 4 0>  /* COL 15 - P1.04 */
+            ;
+    };
+};
+
+e73_spi: &spi1 {};
+e73_i2c: &i2c0 {};
+e73_serial: &uart0 {};

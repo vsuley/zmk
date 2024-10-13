@@ -17,17 +17,17 @@
         compatible = "zmk,kscan-gpio-demux";
         polling-interval-msec = <25>;
         input-gpios
-            = <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-            , <&pro_micro 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&e73_pins 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&e73_pins 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&e73_pins 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&e73_pins 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&e73_pins 4  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
         output-gpios
-            = <&pro_micro 21 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 20 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>
+            = <&e73_pins 21 GPIO_ACTIVE_HIGH>
+            , <&e73_pins 20 GPIO_ACTIVE_HIGH>
+            , <&e73_pins 19 GPIO_ACTIVE_HIGH>
+            , <&e73_pins 18 GPIO_ACTIVE_HIGH>
             ;
     };
 
@@ -46,7 +46,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)                 RC(4,6)                 RC(4,9) 
     };
 };
 
-&pro_micro_i2c {
+&e73_i2c {
     status = "okay";
 
     oled: ssd1306@3c {
